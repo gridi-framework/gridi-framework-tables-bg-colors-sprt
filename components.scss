@@ -1,0 +1,25 @@
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($tables-background-colors-support-extra-colors-palette, $tables-background-colors-support-skip-colors-palette) {
+    .#{$background-colors-class-prefix}-#{$palette-color-prefix} {
+        th, td {
+            border-color: map_get($palette-color-variables, map_get($table-column-background-colors-support-parser, border-color));
+        }
+
+        th {
+            background: map_get($palette-color-variables, map_get($th-background-colors-support-parser, background));
+            color: map_get($palette-color-variables, map_get($th-background-colors-support-parser, color));
+        }
+
+        tr:nth-child(even) td {
+            background: map_get($palette-color-variables, map_get($td-even-background-colors-support-parser, background));
+            color: map_get($palette-color-variables, map_get($td-even-background-colors-support-parser, color));
+        }
+
+        caption {
+            color: map_get($palette-color-variables, map_get($caption-background-colors-support-parser, color));
+        }
+
+        table {
+            border-color: map_get($palette-color-variables, map_get($table-column-background-colors-support-parser, border-color));
+        }
+    }
+}

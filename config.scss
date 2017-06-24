@@ -1,0 +1,24 @@
+$tables-background-colors-support-extra-colors-palette: () !default;
+$tables-background-colors-support-skip-colors-palette: null !default;
+
+//Th Td
+$table-column-background-colors-support-parser: (
+    border-color: 'background-inner-color'
+) !default;
+
+//Th
+$th-background-colors-support-parser: (
+    background: 'background-inner-color',
+    color: 'color'
+) !default;
+
+//Td
+$td-even-background-colors-support-parser: (
+    background: 'background-inner-color',
+    color: 'color'
+) !default;
+
+//Caption
+$caption-background-colors-support-parser: (
+    color: 'background-inner-color'
+) !default;
