@@ -1,4 +1,4 @@
-@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($table-background-colors-support-extra-colors-palette, $table-background-colors-support-skip-colors-palette) {
+@each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($tables-background-colors-support-extra-colors-palette, $tables-background-colors-support-skip-colors-palette) {
     .#{$background-colors-class-prefix}-#{$palette-color-prefix} {
         th, td {
             border-color: map_get($palette-color-variables, map_get($table-column-background-colors-support-parser, border-color));
@@ -20,7 +20,7 @@
 
         table {
             border-color: map_get($palette-color-variables, map_get($table-column-background-colors-support-parser, border-color));
-            color: map_get($palette-color-variables, map_get($table-background-colors-support-parser, color));
+            color: map_get($palette-color-variables, map_get($tables-background-colors-support-parser, color));
         }
     }
 }
