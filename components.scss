@@ -3,10 +3,11 @@
         @include table-colors(parse-map($tables-background-colors-support-parser, $palette-color-variables));
         //Caption
         @include caption-colors(parse-map($caption-background-colors-support-parser, $palette-color-variables));
+        //Tr
+        @include tr-colors-propertys(parse-map($tr-background-colors-support-parser, $palette-color-variables));
         //Th
         @include th-colors(parse-map($th-background-colors-support-parser, $palette-color-variables));
         //Td
         @include td-colors(parse-map($td-background-colors-support-parser, $palette-color-variables));
-        @include td-even-colors(parse-map($td-even-background-colors-support-parser, $palette-color-variables));
     }
 }
